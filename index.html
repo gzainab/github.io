@@ -256,79 +256,92 @@
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">La cuisine de Zain 🧁</h3>
-        <div class="pvs-list__outer-container">
-	<h4><span style="font-family: 'times new roman', times, serif;"><em>Gr&acirc;ce &agrave; mes connaissances et exp&eacute;riences dans le digital ainsi que dans la cuisine, je me suis lanc&eacute;e dans la cr&eacute;ation d'une page instagram dans laquelle je partage mes cr&eacute;ations ainsi que des recettes.</em></span></h4>
-	<h4><span style="font-family: 'times new roman', times, serif;"><em> Je poste r&eacute;guli&egrave;rement du contenu afin de rendre ma page attractive et dynamique, cela me permet de g&eacute;n&eacute;rer plusieurs abonn&eacute;s en quelques jours. </em></span></h4>
-	<h4><span style="font-family: 'times new roman', times, serif;"><em>Je ma&icirc;trise de ce fait tous les outils instagram n&eacute;cessaires &agrave; augmenter la visibilit&eacute; de ma page. </em></span></h4>
-	<h4><span style="font-family: 'times new roman', times, serif;"><em>Cette activit&eacute; me permet de d&eacute;velopper et renforcer mes connaissances et comp&eacute;tences sur la ma&icirc;trise des r&eacute;seaux sociaux.</em></span></h4>
-	<h4><span style="font-family: 'times new roman', times, serif;"><em> La cr&eacute;ation de cette page m'a permis d'avoir une meilleure gestion et optimisation de mon temps.</em></span></h4>
-	<h4>&nbsp;</h4>
-        </div>
+    <!-- MAIN (Center website) -->
+<div class="main">
 
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="bouf1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Crevettes au coco + riz au coco !! 🍤">
-            </div>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> La cuisine de Zain</button>
+  <button class="btn" onclick="filterSelection('cars')"> Wax Clothes</button>
+  <button class="btn" onclick="filterSelection('people')"> Voyages</button>
+</div>
 
-            <div class="w3-col m3">
-                <img src="bouf2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Brownies 100% healthy !">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="bouf3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Brownies super légers aux flocons d’avoine 🤤">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="bouf4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Ma recette de crêpes salées au fromage 🧀">
-            </div>
-        </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="bouf5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kalamro (ou Karmo) 🍚 Dessert indien à base de riz.">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="bouf6.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Mousse à la vanille + crème de mangue fraîche ! 🥭">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="bouf7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Fondants au chocolat sans sucre et sans beurre fait au micro onde ⏲">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="bouf8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="L’incontournable ! Le combo : Butter chicken / Cheese naan 🇮🇳">
-            </div>
-            
-        </div>
-	    
-	    <h2 style="text-align: center;">Voyage&nbsp;✈️&nbsp;</h2>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p style="text-align: center;">Pays-Bas 🇳🇱, Madagascar 🇲🇬, R&eacute;publique tch&egrave;que 🇨🇿, Gr&egrave;ce 🇬🇷,<br />Belgique 🇧🇪, Espagne 🇪🇸, Malte 🇲🇹, France 🇫🇷, les DROM - COM&nbsp;🇷🇪</p>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="bouf1.png" alt="Mountains" style="width:100%">
+      <h4>Brownies super légers 🤤</h4>
     </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="bouf2.png" alt="Lights" style="width:100%">
+      <h4>Crevettes au coco + riz au coco !! 🍤</h4>
     </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="bouf3.png" alt="Nature" style="width:100%">
+      <h4>Burgers</h4>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="wax1.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="wax2.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="wax3.png" alt="Car" style="width:100%">
+    </div>
+  </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+  <div class="column people">
+    <div class="content">
+      <img src="v1.png" alt="Car" style="width:100%">
+      <h4>Madagascar</h4>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="v2.png" alt="Car" style="width:100%">
+      <h4>Maido 974</h4>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="v3.png" alt="Car" style="width:100%">
+      <h4>Malte</h4>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="v4.png" alt="Car" style="width:100%">
+      <h4>Prague</h4>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="v5.png" alt="Car" style="width:100%">
+      <h4>Paris</h4>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
 
     <!-- Container (Contact Section) -->
     <div class="w3-content w3-container w3-padding-64" id="contact">
@@ -380,6 +393,50 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
+	    
+	filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}    
     </script>
 
 </body>
